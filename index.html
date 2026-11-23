@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAAHI HORROR | Animation Studio</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#09090d;color:#eee;
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:22px 7%;border-bottom:1px solid #29232d;
+ display:flex;justify-content:space-between;align-items:center;
+}
+.logo{font-size:25px;font-weight:bold;color:#e53945}
+.logo span{color:white}
+main{padding:55px 7%}
+h1{font-size:42px;margin-bottom:10px}
+.subtitle{color:#aaa}
+.panel{
+ margin-top:35px;padding:25px;
+ background:#15151d;border:1px solid #302832;
+ border-radius:12px;max-width:750px;
+}
+button{
+ background:#b51f2b;color:white;border:0;
+ padding:13px 22px;border-radius:6px;
+ cursor:pointer;font-weight:bold;
+}
+button:hover{background:#e53945}
+.status{color:#aaa;margin-top:20px}
+footer{padding:25px 7%;color:#777}
+</style>
+</head>
+<body>
+<header>
+ <div class="logo">RAAHI <span>HORROR</span></div>
+ <div>2D ANIMATION STUDIO</div>
+</header>
+<main>
+ <h1>Welcome to RAAHI HORROR</h1>
+ <p class="subtitle">Create original animated horror stories.</p>
+ <div class="panel">
+  <h2>🎬 Production Dashboard</h2>
+  <p>Project: The Last Bus</p>
+  <p>Animation: 2D Horror</p>
+  <p>Target Duration: 15–20 Minutes</p>
+  <button onclick="showStatus()">Start Production</button>
+  <p class="status" id="status">Studio ready.</p>
+ </div>
+</main>
+<footer>RAAHI HORROR © 2026</footer>
+<script>
+function showStatus(){
+ document.getElementById("status").textContent =
+ "Production workspace is ready. Let's create our first horror story!";
+}
+</script>
+</body>
+</html>
